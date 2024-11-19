@@ -98,6 +98,9 @@ const page = () => {
                 <Progress title='Transportation' money='420.700' w='w-[60px]' />
                 <Progress title='Vehicle' money='520.000' w='w-[90px]' />
             </div>
+            <div className="mt-[101px]">
+              
+            </div>
           </div>
         </div>
       </div>
