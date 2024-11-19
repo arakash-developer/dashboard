@@ -14,6 +14,7 @@ import { FaBus } from "react-icons/fa";
 import { TiHome } from "react-icons/ti";
 import { MdFastfood } from "react-icons/md";
 import { MdSlowMotionVideo } from "react-icons/md";
+import Progress from './component/Progress'
 
 const page = () => {
   return (
@@ -89,9 +90,13 @@ const page = () => {
             </div>
           </div>
           <div className="right w-[350px] bg-[#F9FAFC] pt-[76px] pb-[60px] px-[50px]">
-            <h3 className='font-normal text-xl leading-[150%] text-[#262a41]'>Where your money go?</h3>
+            <h2 className='font-normal text-xl leading-[150%] text-[#262a41]'>Where your money go?</h2>
             <div className="progress mt-[30px] flex flex-col gap-y-[30px]">
-
+                <Progress title='Food and Drinks' money='872.400' w='w-[70px]' />
+                <Progress title='Shopping' money='1.378.200' w='w-[110px]' />
+                <Progress title='Housing' money='928.500' w='w-[57px]' />
+                <Progress title='Transportation' money='420.700' w='w-[60px]' />
+                <Progress title='Vehicle' money='520.000' w='w-[90px]' />
             </div>
           </div>
         </div>
