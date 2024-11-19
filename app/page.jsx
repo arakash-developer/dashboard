@@ -15,6 +15,7 @@ import { TiHome } from "react-icons/ti";
 import { MdFastfood } from "react-icons/md";
 import { MdSlowMotionVideo } from "react-icons/md";
 import Progress from './component/Progress'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -98,8 +99,10 @@ const page = () => {
                 <Progress title='Transportation' money='420.700' w='w-[60px]' />
                 <Progress title='Vehicle' money='520.000' w='w-[90px]' />
             </div>
-            <div className="mt-[101px]">
-              
+            <div className="mt-[101px] rounded-[15px] pt-[77px] px-[25px] pb-[25px] bg-[#edf0f6]">
+              <h3 className='font-semibold text-base text-[#273240]'>Save more money</h3>
+              <p className='font-normal text-xs leading-[175%] text-[#404852] opacity-70 mt-1 mb-5'>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+              <Link href='#' className='font-semibold text-[0.81rem] text-[#fff] rounded-[8px] flex justify-center bg-[#101010] py-[13px] w-full'>VIEW TIPS</Link>
             </div>
           </div>
         </div>
