@@ -5,6 +5,8 @@ import MenuLi from './component/MenuLi'
 import Girl from '@/public/girl.jpg'
 import Girl2 from '@/public/girl2.jpg'
 import Boy from '@/public/men.jpg'
+import Illustration from '@/public/Illustration.png'
+import Illustration2 from '@/public/Illustration2.png'
 import Stats from '@/public/Stats.png'
 import { FaPlus } from "react-icons/fa";
 import ItemCart from './component/ItemCart'
@@ -93,13 +95,19 @@ const page = () => {
           <div className="right w-[350px] bg-[#F9FAFC] pt-[76px] pb-[60px] px-[50px]">
             <h2 className='font-normal text-xl leading-[150%] text-[#262a41]'>Where your money go?</h2>
             <div className="progress mt-[30px] flex flex-col gap-y-[30px]">
-                <Progress title='Food and Drinks' money='872.400' w='w-[70px]' />
-                <Progress title='Shopping' money='1.378.200' w='w-[110px]' />
-                <Progress title='Housing' money='928.500' w='w-[57px]' />
-                <Progress title='Transportation' money='420.700' w='w-[60px]' />
-                <Progress title='Vehicle' money='520.000' w='w-[90px]' />
+              <Progress title='Food and Drinks' money='872.400' w='w-[70px]' />
+              <Progress title='Shopping' money='1.378.200' w='w-[110px]' />
+              <Progress title='Housing' money='928.500' w='w-[57px]' />
+              <Progress title='Transportation' money='420.700' w='w-[60px]' />
+              <Progress title='Vehicle' money='520.000' w='w-[90px]' />
             </div>
-            <div className="mt-[101px] rounded-[15px] pt-[77px] px-[25px] pb-[25px] bg-[#edf0f6]">
+            <div className="mt-[101px] rounded-[15px] pt-[77px] px-[25px] pb-[25px] bg-[#edf0f6] relative">
+              <div className="absolute left-[25px] -top-[15px]">
+                <Image src={Illustration} alt={Illustration} />
+              </div>
+              <div className="absolute right-0 -top-0">
+                <Image src={Illustration2} alt={Illustration2} />
+              </div>
               <h3 className='font-semibold text-base text-[#273240]'>Save more money</h3>
               <p className='font-normal text-xs leading-[175%] text-[#404852] opacity-70 mt-1 mb-5'>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
               <Link href='#' className='font-semibold text-[0.81rem] text-[#fff] rounded-[8px] flex justify-center bg-[#101010] py-[13px] w-full'>VIEW TIPS</Link>
