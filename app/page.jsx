@@ -4,8 +4,6 @@ import Image from 'next/image'
 import MenuLi from './component/MenuLi'
 
 const page = () => {
-
-
   return (
     <div className='w-full h-[100vh] flex justify-center items-center'>
       <div className="flex rounded-[30px] w-[90.00rem] h-[56.25rem] bg-[#101010] pl-[80px] py-5 pr-5 text-[#fff]">
@@ -17,7 +15,7 @@ const page = () => {
           <p className='font-normal text-[1.06rem] leading-[159%] text-[#fff] opacity-60'>samantha@email.com</p>
           <ul className="menu mt-[118px] flex flex-col gap-y-[30px]">
             <MenuLi litext='Dashboard' />
-            <MenuLi litext='Expenses' />
+            <MenuLi highlight='opacity-1' litext='Expenses' />
             <MenuLi litext='Wallets' />
             <MenuLi litext='Summary' />
             <MenuLi litext='Accounts' />
