@@ -7,7 +7,13 @@ import Girl2 from '@/public/girl2.jpg'
 import Boy from '@/public/men.jpg'
 import Stats from '@/public/Stats.png'
 import { FaPlus } from "react-icons/fa";
-
+import ItemCart from './component/ItemCart'
+import { HiDotsHorizontal } from "react-icons/hi";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaBus } from "react-icons/fa";
+import { TiHome } from "react-icons/ti";
+import { MdFastfood } from "react-icons/md";
+import { MdSlowMotionVideo } from "react-icons/md";
 
 const page = () => {
   return (
@@ -53,7 +59,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className="rounded-full w-[28px] h-[28px] border-[3px] border-[#d2dce8] flex justify-center items-center">
-                  <FaPlus className='text-[#d2dce8] inline-block'/>
+                  <FaPlus className='text-[#d2dce8] inline-block' />
                 </div>
               </div>
             </div>
@@ -61,10 +67,32 @@ const page = () => {
               <Image src={Stats} alt={Stats} />
             </div>
             <div className="mt-[47px]">
-                <h2 className='font-normal text-lg leading-[167%] text-[#262a41] border-b-2 border-[#dedede] pb-2'>Today</h2>
+              <div className="flex justify-between items-center border-b-2 border-[#dedede] pb-2">
+                <h2 className='font-normal text-lg leading-[167%] text-[#262a41]'>Today</h2>
+                <HiDotsHorizontal className='text-[#D8D8D8]' />
+              </div>
+            </div>
+            <div className="mt-[26px] flex flex-col gap-y-[24px]">
+              <ItemCart h3='Grocery' p='5:12 pm  •  Belanja di pasar' bg='bg-[#32A7E2]' money='-326.800' icon={<MdOutlineShoppingCart className='text-[24px] inline-block' />} />
+              <ItemCart h3='Transportation' p='5:12 pm  •  Naik bus umum' bg='bg-[#B548C6]' money='-15.000' icon={<FaBus className='text-[22px] inline-block' />} />
+              <ItemCart h3='Housing' p='5:12 pm  •  Bayar Listrik' bg='bg-[#FF8700]' money='-185.750' icon={<TiHome className='text-[24px] inline-block' />} />
+            </div>
+            <div className="mt-[59px]">
+              <div className="flex justify-between items-center border-b-2 border-[#dedede] pb-2">
+                <h2 className='font-normal text-lg leading-[167%] text-[#262a41]'>Monday, 23 March 2020</h2>
+                <HiDotsHorizontal className='text-[#D8D8D8]' />
+              </div>
+            </div>
+            <div className="mt-[26px] flex flex-col gap-y-[24px]">
+              <ItemCart h3='Food and Drink' p='5:12 pm  •  Makan Steak' bg='bg-[#DC3434]' money='-156.000' icon={<MdFastfood className='text-[24px] inline-block' />} />
+              <ItemCart h3='Entertainment' p='5:12 pm  •  Nonton Bioskop' bg='bg-[#4BA83D]' money='-35.200' icon={<MdSlowMotionVideo className='text-[22px] inline-block' />} />
             </div>
           </div>
           <div className="right w-[350px] bg-[#F9FAFC] pt-[76px] pb-[60px] px-[50px]">
+            <h3 className='font-normal text-xl leading-[150%] text-[#262a41]'>Where your money go?</h3>
+            <div className="progress mt-[30px] flex flex-col gap-y-[30px]">
+
+            </div>
           </div>
         </div>
       </div>
@@ -72,4 +100,4 @@ const page = () => {
   )
 }
 
-export default page
+export default page 
