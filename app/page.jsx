@@ -105,7 +105,7 @@ const page = () => {
               <div className="absolute left-[25px] -top-[15px]">
                 <Image src={Illustration} alt={Illustration} />
               </div>
-              <div className="absolute right-0 -top-0">
+              <div className="absolute right-[25px] -top-[34px]">
                 <Image src={Illustration2} alt={Illustration2} />
               </div>
               <h3 className='font-semibold text-base text-[#273240]'>Save more money</h3>
